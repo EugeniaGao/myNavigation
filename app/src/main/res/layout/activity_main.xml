@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:background="#9e9eac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#992ef1"></android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <!--左菜单
+        android:layout_gravity="left"  设置菜单的方向（左边）
+        app:headerLayout="@layout/header" 菜单头布局
+        app:menu="@menu/menu"   菜单选项
+    -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
+        android:background="#f00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu"
+
+      />
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
